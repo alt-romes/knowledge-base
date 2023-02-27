@@ -1,3 +1,7 @@
+
+
+----
+
 Removing all errors from the desugarer (HsToCore errors)
 
 Multiplicity coercions should work similarly to representation coercions do see `DsMultiplicityCoercionsNotSupported`.

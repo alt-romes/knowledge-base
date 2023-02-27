@@ -1,6 +1,7 @@
 #ghc 
 
 The unit state puts together the package databases and handles things like wired-in unit ids to create a more uniform interface to unit ids in general, which is then used, e.g., for pretty printing unit-ids (see [[Pretty printing unit-ids]])
+The unit state is created by `mkUnitState` which states:
 
 ```
    Plan.
@@ -54,3 +55,19 @@ The unit state puts together the package databases and handles things like wired
        d) finally, using the visibility map and the package database,
           we build a mapping saying what every in scope module name points to.
 ```
+
+In its body we have
+
+```haskell
+  -- Sort out which packages are wired in. This has to be done last, since
+  -- it modifies the unit ids of wired in packages, but when we process
+  -- package arguments we need to key against the old versions.
+  --
+  (pkgs2, wired_map) <- findWiredInUnits logger prec_map pkgs1 vis_map2
+```
+
+The function `findWiredInUnits` will find the wired-in units and maps them to their wired-in unit ids, by returning the complete mapping from found unit-ids to the wired-in unit-ids.
+* For each of the wired-in packages `wiredInUnitIds` in `GHC.Unit.Types`, find the corresponding wired-in unity in the list of packages previously computed as explained in the plan above.
+* The finding is defined by a `match` function called on the wired-in package and on each of the available packes sorted by the "preferred" order.
+* The `match` function compares the package name gotten from the `UnitInfo` found in the package database against the exact name of the wired-in package, confirming that the package name/unit-id in the `UnitInfo` of the wired-in packages as they are installed is the same as the wired-in name.
+* The mappings can be seen by calling ghc with `-v2`

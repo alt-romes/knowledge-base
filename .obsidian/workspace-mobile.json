@@ -11,8 +11,12 @@
             "id": "97d01319960247ab",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Haskell/GHC/Plugin Loading Incompatibity.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Haskell/GHC/Plugin Loading Incompatibity.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Haskell/GHC/Plugin Loading Incompatibity.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "Haskell/GHC/Plugin Loading Incompatibity.md"
+          }
         }
       }
     ],
@@ -125,12 +133,23 @@
   },
   "active": "97d01319960247ab",
   "lastOpenFiles": [
+    "Haskell/GHC/Plugin Incompatibility Overview.jpg",
+    "image 3.jpg",
+    "image 2.jpg",
+    "image 1.jpg",
+    "image.jpg",
+    "Haskell/Cabal/Cabal unit-id creation.md",
+    "Diary/2023-02-27.md",
+    "Diary/2023-02-26.md",
+    "Haskell/GHC/Note {About units}.md",
+    "Haskell/GHC/Pretty printing unit-ids.md",
+    "Haskell/GHC/Note {Wired-in units}.md",
+    "Haskell/GHC/UnitState.md",
+    "Untitled.md",
     "Ghengin/Renderering.md",
     "Ghengin/Ghengin.md",
     "Haskell/Haskell  - Misc.md",
-    "Diary/2023-02-26.md",
     "Diary",
-    "Untitled.md",
     "Screenshot 2023-02-18 at 18.45.15.png",
     "Haskell/GHC/GHC - Wired In Units.md"
   ]

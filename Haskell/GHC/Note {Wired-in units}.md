@@ -35,4 +35,5 @@ Make sure you change 'GHC.Unit.State.findWiredInUnits' if you add an entry here.
 The main issue seems to be that a compiler might compile different packages that depend on different versions of wired-in units, and ghc should be able to link against any of those unit's versions but have its wired-in names still "connect" to the unit's, regardless of version.
 *We don't want to bake the version numbers of these packages into GHC*.
 
-A tentative solution is to keep the wired-in name for the unit (e.g. `ghc` rather than `ghc-version-hash`) in the wired-in names, but use a different unit-id, but when loading a wired-in name from a unit, we ...
+All of the wired-in units (on top of which wired-in modules are created) are found beneath this Note in `GHC.Unit.Types` (while the wired-in types and names are in `GHC.Builtin.*`)
+

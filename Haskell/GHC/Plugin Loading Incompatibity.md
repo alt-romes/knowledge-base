@@ -2,6 +2,19 @@
 
 Package DBs, unit-ids, Cabal hashes, and wired-in units.
 
+Things we must take into consideration:
+* What was I linked against -- this has to match (3)
+* The packages that I compile what are they linked against
+* The plugin that I'm loading, what is it linked against
+
+Next steps:
+* Use unsafePerformIO as the first step
+* Ultimately make wired-in names a dynamic thing only known at runtime based on -this-unit-id value
+
+
+![[Plugin Incompatibility Overview.jpg]]
+
+
 Q: How does cabal compute abi hashes for installed units?
 A: It calls ghc with --abi-hash on all exposed modules listed in the interface (See `libraries/Cabal/src/Distribution/Simple/Register.hs`)
 
