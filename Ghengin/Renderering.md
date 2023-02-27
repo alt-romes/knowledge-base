@@ -1,3 +1,5 @@
+#ghengin 
+
 Can a transform be just a mesh property, and a scene graph just a function called in the update function to traverse the meshes and update those properties? But the transform shouldn't be associated to the mesh, but rather to the render packet. So perhaps, meshes shouldn't be global and render packets shouldn't reference meshes? How can we have the more general case?
 
 Previously we were iterating over all render packets every frame and constructing the render queue from that. Now, we wouldn't have to because the render queue is created once and modified directly every time an edit or addition needs to be done?

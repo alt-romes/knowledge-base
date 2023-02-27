@@ -1,3 +1,5 @@
+#haskell #parsing
+
 Official tutorial: https://markkarpov.com/tutorial/megaparsec.html
 
 Some simple example code for setting up megaparsec for users already familiar but that have forgotten the details

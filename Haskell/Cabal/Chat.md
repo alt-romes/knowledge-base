@@ -1,3 +1,5 @@
+#ghc #cabal
+
 1.  romes
     Hi 👋 I’m trying to understand if the code in cabal-install to compute a package’s unit-id (hashedInstalledPackageId in Distribution.Client.PackageHash) is too tied in to cabal-install or whether it could be feasibly moved to the Cabal package?
     On my current work on plugin abi incompatibility, everything points to a solution that involves having ghc compute its own unit-id exactly as cabal would. An added benefit is that this path ultimately also enables us to handle wired-in packages without the -this-unit-id package hack. So, right now, it seems like the elegant solution :)

@@ -11,7 +11,7 @@
             "id": "97d01319960247ab",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -124,5 +124,14 @@
     }
   },
   "active": "97d01319960247ab",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Ghengin/Renderering.md",
+    "Ghengin/Ghengin.md",
+    "Haskell/Haskell  - Misc.md",
+    "Diary/2023-02-26.md",
+    "Diary",
+    "Untitled.md",
+    "Screenshot 2023-02-18 at 18.45.15.png",
+    "Haskell/GHC/GHC - Wired In Units.md"
+  ]
 }
