@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:Ghengin",
+      "query": "tag:ghengin",
       "color": {
         "a": 1,
         "rgb": 5431380
@@ -32,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.4114892347853751,
+  "scale": 0.7281137612579166,
   "close": true
 }
