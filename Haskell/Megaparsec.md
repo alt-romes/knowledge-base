@@ -46,7 +46,17 @@ integer = lexeme L.integer
 Running a parser:
 
 ```haskell
+-- useful in GHCi
+parseTest <parser> <content>
 
+-- primary way to run a parser
+parse <parser> <filename> <content>
+
+-- example
+ct <- B.readFile f
+case parse parser f ct of
+	Left e -> fail (errorBundlePretty e)
+	Right x -> pure x
 ```
 
 ## Examples
@@ -81,3 +91,8 @@ A parser that consumes any printable character (letters, spaces, punctuation,...
 For a complete and interesting example see [parsing a simple imperative language](https://github.com/mrkkrp/megaparsec-site/blob/master/tutorials/parsing-simple-imperative-language.md).
 
 
+#### Parsing a list of comma separated values
+
+```haskell
+
+```

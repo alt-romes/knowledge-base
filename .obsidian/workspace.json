@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b4e242ac544d8a7e",
+        "id": "34ebd125c099bf79",
         "type": "tabs",
         "children": [
           {
-            "id": "2f12ef02a0bd29a4",
+            "id": "1ba1773c20e16d5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Haskell/GHC/Dynamic unit-ids in wired-in packages.md",
+                "file": "Ghengin/Ghengin Core.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Haskell/GHC/Dynamic unit-ids in wired-in packages.md",
+                "file": "Ghengin/Ghengin Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Haskell/GHC/Dynamic unit-ids in wired-in packages.md",
+                "file": "Ghengin/Ghengin Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Haskell/GHC/Dynamic unit-ids in wired-in packages.md"
+                "file": "Ghengin/Ghengin Core.md"
               }
             }
           }
@@ -147,36 +147,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f12ef02a0bd29a4",
+  "active": "1ba1773c20e16d5e",
   "lastOpenFiles": [
-    "Haskell/GHC/Note {About units}.md",
-    "Haskell/GHC/Plugin Incompatibility Overview.jpg",
-    "Haskell/GHC/Dynamic unit-ids in wired-in packages.md",
-    "Haskell/GHC/Pretty printing unit-ids.md",
-    "Haskell/GHC/Plugin Loading Incompatibity.md",
-    "Diary/2023-02-28.md",
-    "Diary/2023-02-27.md",
-    "Ghengin/Use explicit references for Materials and Pipelines.md",
-    "Ghengin/Renderering.md",
-    "Haskell/GHC/Note {Wired-in units}.md",
-    "Haskell/GHC/Cheatsheet.md",
-    "Haskell/GHC/UnitState.md",
-    "index.md",
+    "Ghengin/Ghengin Core.md",
     "Ideas.md",
+    "Linear Core/Type-checking Linearity in Haskell's Core Intermediate Language.md",
+    "Diary/2023-03-01.md",
+    "GHC/Dynamic unit-ids in wired-in packages.md",
+    "GHC/Cheatsheet.md",
+    "Ghengin/Ghengin.md",
+    "GHC/Note {About units}.md",
+    "Haskell/Cabal/Chat.md",
+    "Haskell/Cabal/Cabal unit-id creation.md",
+    "Haskell/Haskell  - Misc.md",
+    "Haskell/Megaparsec.md",
+    "Ghengin/Renderering.md",
+    "Ghengin/Use explicit references for Materials and Pipelines.md",
+    "Ghengin/Ideas.md",
+    "index.md",
+    "Untitled.canvas",
+    "Diary/2023-02-27.md",
+    "Diary/2023-02-28.md",
+    "Diary/2023-03-01 1.md",
+    "Linear Core",
+    "Diary/2023-02-26.md",
+    "GHC/Plugin Loading Incompatibity.md",
+    "GHC/Plugin Incompatibility Overview.jpg",
+    "GHC/Note {Wired-in units}.md",
+    "GHC/Pretty printing unit-ids.md",
+    "GHC/UnitState.md",
     "Haskell/GHC/ssss",
     "image.jpg",
     "image 1.jpg",
     "image 2.jpg",
-    "Haskell/Cabal/Chat.md",
-    "Haskell/Cabal/Cabal unit-id creation.md",
-    "Haskell/Megaparsec.md",
     "config.js",
-    "Haskell/Haskell  - Misc.md",
     "Untitled.md",
-    "Diary/2023-02-26.md",
-    "Untitled.canvas",
-    "Ghengin/Ghengin.md",
-    "Ghengin/Ideas.md",
     "Equality Saturation",
     "Diary",
     "Screenshot 2023-02-18 at 18.45.15.png"

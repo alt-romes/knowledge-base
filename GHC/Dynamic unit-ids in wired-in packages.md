@@ -19,6 +19,13 @@ A benefit of this approach is that it paves the way for a `{-# BUILTIN #-}` prag
 From the -package-id flags, we need to construct an *unwire map*, which maps the names of the wired-in units to the actual wired-in unit-ids (wired-in names -> wired-in unit-id), and tentatively store it in the [[UnitState]].
 To construct the *unwire map*, we must update `findWiredInUnits` in `GHC.Unit.State` which is where we previously constructed a mapping from the found wired-in units to their canonical names (base-1.0 ==> base).
 
-When defining the wired-in unit-ids, we must take into consideration that if we don't depend on the wired-in packages (e.g. when we're building ghc we don't depend on ghc), then we cannot have a unit-id for the wired-in packages we don't depend on. That's fine (?), since if we don't depend on those packages we won't link to them and therefore whatever the unit-id of the wired-in names we wouldn't be able to use them. In practice, we don't use the wired-in names of the packages we don't depend on, so it doesn't matter whether they've got an actual unit-id when we don't need them.
-No, it isn't fine. Wired-in names seem to be used regardless of whether the package is specifically specified with -package-id, however, the package is still listed in the `UnitState` store, which also takes into consideration implicit package databases and the wired-in things I guess.
-When exactly do we not have access to the wired-in packages in the database (besides perhaps when building them?)
+When defining the wired-in unit-ids, we must take into consideration that if we don't depend on the wired-in packages (e.g. when we're building ghc we don't depend on ghc), then we cannot have a unit-id for the wired-in packages we don't depend on?
+
+The built-in ghc names are the plugin module defined in `GHC.Builtin.Names` (`pLUGINS`)
+
+A current issue with the unsafePerformIO workaround is that the wired-in names are needed before the wired-in map is set by `mkUnitState`.
+
+
+TODO:
+[ ] `findAndReadIface` must be changed to account for the new wired-in unit logic
+[ ] Write a note [[Figuring out the wired-in unit ids]] and a smaller one [[Why we need IO for built-in names]]

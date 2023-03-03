@@ -51,3 +51,8 @@ It seems to be a bit more subtle than that, because the same compiler should be 
 
 Would the check be done automatically by cabal? I think not.
 
+Another idea: plugins are the only built-in names that depend on ghc, can we inspect pluginTyConName against something?
+```
+ loadPlugin = loadPlugin' (mkVarOccFS (fsLit "plugin")) pluginTyConName hsc_env
+                                                        ^^^^^^^^^^^^^^^
+```
