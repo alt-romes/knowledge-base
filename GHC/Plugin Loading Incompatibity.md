@@ -56,3 +56,8 @@ Another idea: plugins are the only built-in names that depend on ghc, can we ins
  loadPlugin = loadPlugin' (mkVarOccFS (fsLit "plugin")) pluginTyConName hsc_env
                                                         ^^^^^^^^^^^^^^^
 ```
+
+Having [[Dynamic unit-ids in wired-in packages]], we need some way to store the unit-id of the GHC compiler so that we can compare it against the ghc library that a plugin depends on.
+
+Q: How does hadrian compute unit-ids to pass through `-this-unit-id`?
+A: In `

@@ -10,6 +10,8 @@ A: The hash calculated by `hashPackageHashInputs` in `cabal-install:Distribution
 
 How can we recreate the unit-id of a package?
 * `renderPackageHashInputs` does laboured rendering of the `PackageHashInputs` to a string. This logic is needed to compute the unit-id
-* `hashedInstalledPackageId` creates the unit-id (longer or shorter) depending on the platform. This is also needed to recreate a unit-id
+* `hashedInstalledPackageId` creates the unit-id (longer or shorter) depending on the platform. This is also needed to recreate a unit-id (perhaps not needed for `ghc` which is already short)
 * We need a SHA256 function to hash the rendered package hash inputs
 * We need the `PackageHashInputs` as they exist at cabal-install time
+
+The logic of nix-style hashes is in `Distribution.Client.PackageHash` in `cabal-install`
