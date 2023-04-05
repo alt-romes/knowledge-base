@@ -25,6 +25,13 @@ The first step is to successfully compile with any other unit-id, like ghc-versi
 
 Here it is: [!10119](https://gitlab.haskell.org/ghc/ghc/-/merge_requests/10119)
 
-TODO: Write a Note about this. Note [ghc the library's unit-id]
+[x] Write a Note about this. Note [GHC's Unit Id]
 
 Idea for testing: check the build artifact `GHC.Settings.Config` has a unit-id matching the one cabal gives it?
+
+Q: Why does cabal-copy crash on incompatible unit ids?
+A: 
+
+--
+
+Don't include hash in the dependencies ids. Leave a TODO.

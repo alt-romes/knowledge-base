@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3300a3750b14b0d5",
+        "id": "1d636d5cbfb801a6",
         "type": "tabs",
         "children": [
           {
-            "id": "04f07315c767664c",
+            "id": "f4430a703a041a30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ghengin/Ghengin Core.md",
+                "file": "GHC/LFInfo and Tagging.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ghengin/Ghengin Core.md",
+                "file": "GHC/LFInfo and Tagging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ghengin/Ghengin Core.md",
+                "file": "GHC/LFInfo and Tagging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ghengin/Ghengin Core.md"
+                "file": "GHC/LFInfo and Tagging.md"
               }
             }
           }
@@ -148,35 +147,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "906f8658b823211d",
+  "active": "f4430a703a041a30",
   "lastOpenFiles": [
+    "GHC/Notes on LFInfo.md",
+    "GHC/LFInfo and Tagging.md",
+    "GHC/Tagging.txt",
+    "GHC/Cross compilation.md",
+    "GHC/Cheatsheet.md",
+    "GHC/GHC - Misc.md",
+    "GHC/Hardwiring a better unit-id for ghc.md",
+    "GHC/Audit of isNullaryRepDataCon.md",
+    "GHC/UnitState.md",
+    "GHC/Why we need UnitState for wired-in names.md",
+    "GHC/Dynamic unit-ids in wired-in packages.md",
+    "Haskell/Haskell  - Misc.md",
+    "CVS.md",
+    "GHC/Plugin Incompatibility Overview.jpg",
+    "GHC/Note {Wired-in units}.md",
+    "GHC/Note {About units}.md",
+    "GHC/Profiling.md",
+    "GHC/Pretty printing unit-ids.md",
+    "GHC/Plugin Loading Incompatibity.md",
+    "Ghengin/Ghengin Core.md",
     "Ghengin/Use explicit references for Materials and Pipelines.md",
     "Ghengin/Renderering.md",
-    "Ghengin/Ghengin Core.md",
     "Ghengin/Ghengin.md",
-    "Haskell/Haskell  - Misc.md",
     "Ideas.md",
-    "CVS.md",
     "Linear Core/Type-checking Linearity in Haskell's Core Intermediate Language.md",
     "Haskell/Megaparsec.md",
     "Haskell/Cabal/Chat.md",
     "Haskell/Cabal/Cabal unit-id creation.md",
-    "GHC/Cheatsheet.md",
-    "GHC/Dynamic unit-ids in wired-in packages.md",
-    "Diary/2023-02-26.md",
-    "Diary/2023-02-27.md",
-    "Diary/2023-02-28.md",
-    "GHC/Pretty printing unit-ids.md",
-    "GHC/Plugin Loading Incompatibity.md",
-    "GHC/Hardwiring a better unit-id for ghc.md",
-    "GHC/Profiling.md",
-    "GHC/UnitState.md",
-    "GHC/Why we need UnitState for wired-in names.md",
-    "GHC/Note {About units}.md",
-    "GHC/Note {Wired-in units}.md",
-    "GHC/Plugin Incompatibility Overview.jpg",
-    "Diary/2023-03-01.md",
-    "Ghengin/Ideas.md",
     "Untitled.canvas",
     "Linear Core",
     "Haskell/GHC/ssss",
